@@ -1,0 +1,24 @@
+# This workflow will checkout to dev branch and make a merge into the dev branch, if the pull request was accepted
+
+name: Merge to Dev
+
+on:
+  pull_request:
+    branches: [ "feature-dataAnalysis", "feature-models" ]
+    types: [closed]
+
+jobs:
+  merge-to-dev:
+    runs-on: ubuntu-latest
+
+    if: github.event.pull_request.merged == true
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Merge changes to dev
+        run: |
+          git checkout dev
+          git merge --no-ff ${{ github.event.pull_request.head.sha }}
+          git push origin dev
