@@ -23,9 +23,3 @@
 3. Seguir padrão de mensagens do commit: https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657 
 
     * Dica: faça com que a mensagem do commit transmita a quem vê esse commit, o que está sendo adicionado ao projeto. Ex: feat: leitura dos dados foi implementado
-
-### CI/CD
-
-No repositório já existe um protótipo de automação de código
-
-Para esse primeiro projeto ele já vai estar praticamente completo de acordo com o que é esperado de um arquivo de build automática. Portanto, utilize como ferramenta de estudo, e se você se sentir confortável vá alterando e vendo como isso afeta o código e até mesmo a estrutura do repositório.
