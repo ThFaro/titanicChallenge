@@ -8,7 +8,6 @@
 # http://github.com/petervanderdoes/gitflow-avh/blob/develop/LICENSE
 
 # Updated for the fork at petervanderdoes
-
 usage() {
 	echo "Usage: [environment] gitflow-installer.sh [install|uninstall] [stable|develop|version] [tag]"
 	echo "Environment:"
